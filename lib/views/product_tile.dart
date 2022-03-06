@@ -29,21 +29,6 @@ class ProductTile extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
                 ),
-                Positioned(
-                  right: 0,
-                  child: Obx(() => CircleAvatar(
-                    backgroundColor: Colors.white,
-                    child: IconButton(
-                      icon: Icon(Icons.favorite_rounded),
-                      // icon: product.isFavorite.value
-                      //     ? Icon(Icons.favorite_rounded)
-                      //     : Icon(Icons.favorite_border),
-                      onPressed: () {
-                        // product.isFavorite.toggle();
-                      },
-                    ),
-                  )),
-                )
               ],
             ),
             SizedBox(height: 8),
@@ -79,7 +64,7 @@ class ProductTile extends StatelessWidget {
               ),
             SizedBox(height: 8),
             Text('\$${product.price}',
-                style: TextStyle(fontSize: 32, fontFamily: 'avenir')),
+                style: TextStyle(fontSize: 32)),
           ],
         ),
       ),

@@ -14,7 +14,7 @@ class Product {
   final String? productLink;
   final String? websiteLink;
   final String? description;
-  final int? rating;
+  final double? rating;
   final dynamic category;
   final String? productType;
   final List<dynamic>? tagList;
@@ -57,7 +57,7 @@ class Product {
         productLink = json['product_link'] as String?,
         websiteLink = json['website_link'] as String?,
         description = json['description'] as String?,
-        rating = json['rating'] as int?,
+        rating = json['rating'] as double?,
         category = json['category'],
         productType = json['product_type'] as String?,
         tagList = json['tag_list'] as List?,
